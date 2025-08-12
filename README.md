@@ -3,7 +3,9 @@
    # Snake Game 
 </div>
 
-TODO: gif of game
+<div align=center>
+   <img src="snakeGame.gif" alt="video clip of snake game gameplay" width = 800>
+</div>
 
 # Installation
 > [!IMPORTANT]

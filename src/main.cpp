@@ -1,5 +1,4 @@
 #include <SFML/Graphics.hpp>
-#include <iostream>
 #include <cstdlib>
 
 constexpr uint8_t MAP_WIDTH{120};
@@ -16,14 +15,14 @@ int main()
   sf::RenderWindow window(sf::VideoMode({120,120}), "Snake Game");
 
   // snake entity 
-  sf::Texture snakeTex("snake.png");
+  sf::Texture snakeTex("images/snake.png");
   sf::Sprite* snakeHead = new sf::Sprite(snakeTex, sf::IntRect( {0,0}, {8,8}));
 
   std::vector<sf::Sprite*> snakeList;
   snakeList.push_back(snakeHead);
 
   // apple sprite
-  sf::Texture appleTex("apple.png");
+  sf::Texture appleTex("images/apple.png");
   sf::Sprite apple(appleTex);
   newApplePosition(apple);
 
@@ -31,7 +30,7 @@ int main()
   sf::RectangleShape gameOverRect( { static_cast<float>(MAP_WIDTH), static_cast<float>(MAP_HEIGHT)} );
   gameOverRect.setFillColor(sf::Color::Black);
 
-  sf::Font font("gameOverFont.otf");
+  sf::Font font("images/gameOverFont.ttf");
   sf::Text gameOverText(font);
   gameOverText.setString("Game Over");
   gameOverText.setFillColor(sf::Color::Red);

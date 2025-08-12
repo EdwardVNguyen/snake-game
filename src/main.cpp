@@ -142,14 +142,7 @@ int main()
     // draw snake 
     for (int i = 0; i < snakeList.size(); ++i)
     {
-      if (i == 0)
-      {
-        window.draw(*snakeHead);
-      }
-      else
-      {
-        window.draw(*snakeList.at(i));
-      }
+      window.draw(*snakeList.at(i));
     }
 
     window.display();

@@ -19,7 +19,7 @@ cd snake-game
 cmake -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 cmake –build build
 ```
-# Starting Game
+# Starting the Game
 ```
 cd build/bin
 ./main

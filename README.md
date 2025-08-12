@@ -11,7 +11,7 @@
 
 # Installation
 > [!IMPORTANT]
-> You must have already installed SFML on your platform. For more information, go to the official SFML website.
+> You must have already installed the SFML library on your platform. For more information, go to the official SFML website.
 
 ```
 git clone git@github.com:EdwardVNguyen/snake-game.git
